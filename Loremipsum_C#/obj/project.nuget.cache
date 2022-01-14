@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IFx/3cMuLibZXdYN5ucL3CgVohTKUjjJ8078yhrla3VUPSlTHOAfrcHXMs3DUx2BCv4ZV23ybTOGYEg6zmayCQ==",
+  "dgSpecHash": "GzzBc0ABuWxB9UQH0hAHaS1lB8f+FgGLdMSuDu7MjkutQFrLn4tUOND1adi54n8YikEIAuRev9UBwf+E0VGEDQ==",
   "success": true,
-  "projectFilePath": "D:\\PROJECT EPAM C#\\Loremipsum_Tests\\Loremipsum_Tests.csproj",
+  "projectFilePath": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_C#\\Loremipsum_Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\illyu\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\illyu\\.nuget\\packages\\microsoft.codecoverage\\17.0.0\\microsoft.codecoverage.17.0.0.nupkg.sha512",

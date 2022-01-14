@@ -12,8 +12,6 @@ namespace Loremipsum_Tests.PageObjects
         private IWebDriver webDriver;
 
         private readonly By _paragrath1 = By.XPath("//div[@id='lipsum']/p[1]");
-        //private readonly By _elementsAllPapagraphs = By.XPath("//div[@id='lipsum']/p");
-
 
         public ResultPageObject(IWebDriver webDriver)
         {

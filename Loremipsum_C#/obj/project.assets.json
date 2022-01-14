@@ -1314,11 +1314,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\PROJECT EPAM C#\\Loremipsum_Tests\\Loremipsum_Tests.csproj",
+      "projectUniqueName": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_C#\\Loremipsum_Tests.csproj",
       "projectName": "Loremipsum_Tests",
-      "projectPath": "D:\\PROJECT EPAM C#\\Loremipsum_Tests\\Loremipsum_Tests.csproj",
+      "projectPath": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_C#\\Loremipsum_Tests.csproj",
       "packagesPath": "C:\\Users\\illyu\\.nuget\\packages\\",
-      "outputPath": "D:\\PROJECT EPAM C#\\Loremipsum_Tests\\obj\\",
+      "outputPath": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_C#\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\illyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
