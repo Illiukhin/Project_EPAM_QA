@@ -8,15 +8,16 @@ namespace Loremipsum_Tests
     public class Tests
     {
         private IWebDriver driver; // объ€вл€ем нашу переменную вебдрайвера
-        private string searchWord = "рыба";
-        private string searchText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
-        private int numberOfChecks = 10;
+        private readonly string url = "https://www.lipsum.com/";
+        private readonly string searchWord = "рыба";
+        private readonly string searchText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+        private readonly int numberOfChecks = 10;
 
         [SetUp]
         public void Setup()
         {
             driver = new OpenQA.Selenium.Chrome.ChromeDriver(); // вызываем экземпл€р
-            driver.Navigate().GoToUrl("https://lipsum.com/"); // вводим тестируемый url
+            driver.Navigate().GoToUrl(url); // вводим тестируемый url
             driver.Manage().Window.Maximize(); // увеличиваем окно браузера
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30); // не€вное ожидание
         }
