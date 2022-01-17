@@ -63,7 +63,7 @@ public class ResultsTests extends BaseTest {
 
     @Test
     public void checkProbabilityContainsWordLorem() {
-        for(int i = 0; i < NUMBER_OF_CHECK; i++) {
+        for(int i = 1; i <= NUMBER_OF_CHECK; i++) {
             getHomePage().getGenerateLoremButton();
             ACTUAL_RESULT += getResultPage().getCountParagraphWithLorem();
             getResultPage().navigateBack();
