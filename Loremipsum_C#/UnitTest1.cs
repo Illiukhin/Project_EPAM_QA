@@ -7,25 +7,24 @@ namespace Loremipsum_Tests
 {
     public class Tests
     {
-        private IWebDriver driver; // объявляем нашу переменную вебдрайвера
-        private readonly string url = "https://www.lipsum.com/";
-        private readonly string searchWord = "рыба";
-        private readonly string searchText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
-        private readonly int numberOfChecks = 10;
+        private IWebDriver webDriver;
+        private const string searchWord = "рыба";
+        private const string searchText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit";
+        private const int numberOfChecks = 10;
 
         [SetUp]
         public void Setup()
         {
-            driver = new OpenQA.Selenium.Chrome.ChromeDriver(); // вызываем экземпляр
-            driver.Navigate().GoToUrl(url); // вводим тестируемый url
-            driver.Manage().Window.Maximize(); // увеличиваем окно браузера
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30); // неявное ожидание
+            webDriver = new OpenQA.Selenium.Chrome.ChromeDriver();
+            webDriver.Navigate().GoToUrl("https://lipsum.com/");
+            webDriver.Manage().Window.Maximize();
+            webDriver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(30);
         }
 
         [Test]
         public void CheckTextContainsWord()
         {
-            var mainMenu = new MainMenuPageObject(driver);
+            var mainMenu = new MainPage(webDriver);
             mainMenu.ChooseRusLanguage();
             Assert.True(mainMenu.GetRusTextFirstParagraph().Contains(searchWord));
         }
@@ -33,30 +32,30 @@ namespace Loremipsum_Tests
         [Test]
         public void CheckCreateLoremStartWithText()
         {
-            var mainMenu = new MainMenuPageObject(driver);
+            var mainMenu = new MainPage(webDriver);
             mainMenu.GenerateLorem();
-            var resultPage = new ResultPageObject(driver);
-            Assert.True(resultPage.GetTextFirstParagraph().StartsWith(searchText));
+            var resultPage = new ResultPage(webDriver);
+            Assert.True(resultPage.GetTextParagraph(1).StartsWith(searchText));
         }
 
         [Test]
         public void CheckCreateWordsIsActual()
         {
-            var mainMenu = new MainMenuPageObject(driver);
-            var resultPage = new ResultPageObject(driver);
+            var mainMenu = new MainPage(webDriver);
+            var resultPage = new ResultPage(webDriver);
 
             mainMenu.GetGenerator(10, "words");
             Assert.IsTrue(resultPage.GetWordsActualSize().Equals(10));
-            driver.Navigate().Back();
+            webDriver.Navigate().Back();
             mainMenu.GetGenerator(0, "words");
             Assert.IsTrue(resultPage.GetWordsActualSize().Equals(5));
-            driver.Navigate().Back();
+            webDriver.Navigate().Back();
             mainMenu.GetGenerator(-1, "words");
             Assert.IsTrue(resultPage.GetWordsActualSize().Equals(5));
-            driver.Navigate().Back();
+            webDriver.Navigate().Back();
             mainMenu.GetGenerator(20, "words");
             Assert.IsTrue(resultPage.GetWordsActualSize().Equals(20));
-            driver.Navigate().Back();
+            webDriver.Navigate().Back();
             mainMenu.GetGenerator(5, "words");
             Assert.IsTrue(resultPage.GetWordsActualSize().Equals(5));
         }
@@ -64,15 +63,15 @@ namespace Loremipsum_Tests
         [Test]
         public void CheckCreateCharsIsActual()
         {
-            var mainMenu = new MainMenuPageObject(driver);
-            var resultPage = new ResultPageObject(driver);
+            var mainMenu = new MainPage(webDriver);
+            var resultPage = new ResultPage(webDriver);
 
             mainMenu.GetGenerator(10, "bytes");
             Assert.IsTrue(resultPage.GetBytesActualSize().Equals(10));
-            driver.Navigate().Back();
+            webDriver.Navigate().Back();
             mainMenu.GetGenerator(-10, "bytes");
             Assert.IsTrue(resultPage.GetBytesActualSize().Equals(5));
-            driver.Navigate().Back();
+            webDriver.Navigate().Back();
             mainMenu.GetGenerator(0, "bytes");
             Assert.IsTrue(resultPage.GetBytesActualSize().Equals(5));
         }
@@ -80,27 +79,27 @@ namespace Loremipsum_Tests
         [Test]
         public void CheckCreateLoremNotStartWithText()
         {
-            var mainMenu = new MainMenuPageObject(driver);
-            var resultPage = new ResultPageObject(driver);
+            var mainMenu = new MainPage(webDriver);
+            var resultPage = new ResultPage(webDriver);
 
             mainMenu.GetCheckboxBeginWithLorem();
             mainMenu.GenerateLorem();
-            Assert.IsFalse(resultPage.GetTextFirstParagraph().StartsWith(searchText));
+            Assert.IsFalse(resultPage.GetTextParagraph(1).StartsWith(searchText));
 
         }
 
         [Test]
         public void CheckProbabilityContainsWordLorem()
         {
-            var mainMenu = new MainMenuPageObject(driver);
-            var resultPage = new ResultPageObject(driver);
+            var mainPage = new MainPage(webDriver);
+            var resultPage = new ResultPage(webDriver);
             int actualResult = 0;
 
             for (int i = 0; i < numberOfChecks; i++)
             {
-                mainMenu.GenerateLorem();
-                actualResult += resultPage.getCountParagraphWithLorem();
-                driver.Navigate().Back();
+                mainPage.GenerateLorem();
+                actualResult += resultPage.GetCountParagraphWithLorem();
+                webDriver.Navigate().Back();
             }
             Assert.IsTrue(actualResult / numberOfChecks >= 2);
         }
@@ -108,11 +107,8 @@ namespace Loremipsum_Tests
         [TearDown]
         public void TearDown()
         {
-            driver.Quit();
-
+            webDriver.Quit();
         }
     }
 }
-//1. Выбираем при создании проэкта NUnit.Test
-//2. Проэкт-управление пакетами-подключаем Selenium.WebDriver
-//3. Проэкт-управление пакетами-подключаем Selenium.WebDriver.ChromeDriver!!!
+
