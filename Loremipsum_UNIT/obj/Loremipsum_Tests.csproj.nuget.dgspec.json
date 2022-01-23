@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_BDD\\Loremipsum_BDD.csproj": {}
+    "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\Loremipsum_UNIT\\Loremipsum_Tests.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_BDD\\Loremipsum_BDD.csproj": {
+    "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\Loremipsum_UNIT\\Loremipsum_Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_BDD\\Loremipsum_BDD.csproj",
-        "projectName": "Loremipsum_BDD",
-        "projectPath": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_BDD\\Loremipsum_BDD.csproj",
+        "projectUniqueName": "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\Loremipsum_UNIT\\Loremipsum_Tests.csproj",
+        "projectName": "Loremipsum_Tests",
+        "projectPath": "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\Loremipsum_UNIT\\Loremipsum_Tests.csproj",
         "packagesPath": "C:\\Users\\illyu\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_BDD\\obj\\",
+        "outputPath": "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\Loremipsum_UNIT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\illyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,7 +50,7 @@
             },
             "NUnit3TestAdapter": {
               "target": "Package",
-              "version": "[4.2.0, )"
+              "version": "[4.1.0, )"
             },
             "Selenium.WebDriver": {
               "target": "Package",
@@ -58,15 +58,13 @@
             },
             "Selenium.WebDriver.ChromeDriver": {
               "target": "Package",
-              "version": "[97.0.4692.7100, )"
+              "version": "[96.0.4664.4500, )"
             },
-            "SpecFlow": {
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[3.9.40, )"
-            },
-            "SpecFlow.NUnit": {
-              "target": "Package",
-              "version": "[3.9.40, )"
+              "version": "[3.1.0, )"
             }
           },
           "imports": [

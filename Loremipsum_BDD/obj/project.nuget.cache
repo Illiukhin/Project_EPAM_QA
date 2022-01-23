@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KCZSsUprieevD4yYAsTaRTc2qu5U7rKFFDpGK14pexEs+lqIlpZ1SnM+JpFj1nctSvlfSXcsGr0uXvF6EuE+Jw==",
+  "dgSpecHash": "5nzCHnmlWu0+4FOTO2K+qW7aToHb8/sDZoRIXnl7tlVoGnN8v8PEMM7vlTZnyqPg/UBtZ/KDNrrzTtmm54YteQ==",
   "success": true,
-  "projectFilePath": "D:\\Visual studio\\C#TESTING\\Loremipsum_BDD\\Loremipsum_BDD.csproj",
+  "projectFilePath": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_BDD\\Loremipsum_BDD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\illyu\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\illyu\\.nuget\\packages\\gherkin\\19.0.3\\gherkin.19.0.3.nupkg.sha512",
