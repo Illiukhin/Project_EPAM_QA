@@ -1,2 +1,2 @@
 # Project_EPAM_QA
-My project
+My project in EPAM
