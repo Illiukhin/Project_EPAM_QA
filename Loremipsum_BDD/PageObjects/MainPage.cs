@@ -16,7 +16,7 @@ namespace Loremipsum_BDD.PageObjects
         private readonly By _rusText = By.XPath("//h2[text()='Что такое Lorem Ipsum?']/following-sibling::p");
         private readonly By _entryField = By.XPath("//input[@id='amount']");
         private readonly By _checkboxBeginWithLorem = By.XPath("//input[@type='checkbox']");
-
+       
         public MainPage(IWebDriver webDriver)
         {
             _webDriver = webDriver;
@@ -28,7 +28,7 @@ namespace Loremipsum_BDD.PageObjects
             return this;
         }
 
-        public string GetRusText()
+        public string GetRusTextFirstParagraph()
         {
             return _webDriver.FindElement(_rusText).Text;
         }
@@ -61,15 +61,13 @@ namespace Loremipsum_BDD.PageObjects
         }
         public int GeneratorInQuantity(int times)
         {
-            int actualResult = 0;
+            int result = 0;
             for (int i = 0; i < times; i++)
             {
-                GenerateLorem();
-                var resultPage = new ResultPage(_webDriver);
-                actualResult += resultPage.GetCountParagraphWithLorem();
+                result += GenerateLorem().GetCountParagraphWithLorem();
                 _webDriver.Navigate().Back();
             }
-            return actualResult;
+            return result / times;
         }
 
     }

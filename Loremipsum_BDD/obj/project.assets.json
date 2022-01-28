@@ -5533,11 +5533,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_BDD\\Loremipsum_BDD.csproj",
+      "projectUniqueName": "C:\\Users\\illyu\\Desktop\\Loremipsum_BDD\\Loremipsum_BDD.csproj",
       "projectName": "Loremipsum_BDD",
-      "projectPath": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_BDD\\Loremipsum_BDD.csproj",
+      "projectPath": "C:\\Users\\illyu\\Desktop\\Loremipsum_BDD\\Loremipsum_BDD.csproj",
       "packagesPath": "C:\\Users\\illyu\\.nuget\\packages\\",
-      "outputPath": "D:\\GitHub\\Project_EPAM_QA\\Loremipsum_BDD\\obj\\",
+      "outputPath": "C:\\Users\\illyu\\Desktop\\Loremipsum_BDD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\illyu\\AppData\\Roaming\\NuGet\\NuGet.Config",
