@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\BBC1_BDD\\BBC1_BDD.csproj": {}
+    "D:\\GitHub\\Project_EPAM_QA\\BBC1_BDD_C#\\BBC1_BDD.csproj": {}
   },
   "projects": {
-    "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\BBC1_BDD\\BBC1_BDD.csproj": {
+    "D:\\GitHub\\Project_EPAM_QA\\BBC1_BDD_C#\\BBC1_BDD.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\BBC1_BDD\\BBC1_BDD.csproj",
+        "projectUniqueName": "D:\\GitHub\\Project_EPAM_QA\\BBC1_BDD_C#\\BBC1_BDD.csproj",
         "projectName": "BBC1_BDD",
-        "projectPath": "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\BBC1_BDD\\BBC1_BDD.csproj",
+        "projectPath": "D:\\GitHub\\Project_EPAM_QA\\BBC1_BDD_C#\\BBC1_BDD.csproj",
         "packagesPath": "C:\\Users\\illyu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\BBC1_BDD\\obj\\",
+        "outputPath": "D:\\GitHub\\Project_EPAM_QA\\BBC1_BDD_C#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\illyu\\AppData\\Roaming\\NuGet\\NuGet.Config",

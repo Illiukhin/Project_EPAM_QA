@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = BBC1_BDD
-build_property.ProjectDir = C:\Users\illyu\source\Repos\dotnetautomationgroup-jan2022\BBC1_BDD\
+build_property.ProjectDir = D:\GitHub\Project_EPAM_QA\BBC1_BDD_C#\

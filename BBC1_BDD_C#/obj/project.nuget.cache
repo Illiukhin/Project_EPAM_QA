@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/yoybI8+YBe0PQZ7/QCfB3UhiO6QzebXRR7gENtlciCTDXkkebW4XLq/S1cb+rFwhPPN/9gcksmjSgBq3Dtb4w==",
+  "dgSpecHash": "2+eIg5724NYhMGiPQAfj8KAn/0q+fLbxzOmsuEtPWL9KXgLb0Awi0aTCm94Wp3Q0qNbKnIpNcBmY+YePhAm6Mw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\illyu\\source\\Repos\\dotnetautomationgroup-jan2022\\BBC1_BDD\\BBC1_BDD.csproj",
+  "projectFilePath": "D:\\GitHub\\Project_EPAM_QA\\BBC1_BDD_C#\\BBC1_BDD.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\illyu\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\illyu\\.nuget\\packages\\fluentassertions\\6.4.0\\fluentassertions.6.4.0.nupkg.sha512",
